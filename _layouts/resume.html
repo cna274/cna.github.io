@@ -47,51 +47,26 @@
 
       </header>
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
+    
+		{% if site.resume_section_education %}
+       <!-- begin Education -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Experience</h2>
+          <h2>Research</h2>
         </header>
 
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Delphi Automotive Systems</h3>
-          <h4 class="resume-item-details" itemprop="description">Software Engineer &bull; Aug, 2013 &mdash; July 2015</h4>
-          <p class="resume-item-copy">Programmed and tested Electronic Control Module (Name: DCM 2.5) for Hyundai Motors.	
-		  Worked on CAN communication protocol and feature like Fuel Injection in Daimler Project.    
-		Extensively used Polyspace (Static testing) and RTRT (Dynamic testing) tools for unit testing embedded systems.
-</p>
-          <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
-          </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- another resume item -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- by now you're getting the picture... -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
-
-        </div><!-- end of resume-item -->
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Real Time Voice Activity Detection Using ConvNet</h3>
+          <h4 class="resume-item-details" itemprop="description">Advisor : Dr. Nasser Kehtarnavaz &bull; 2016 &mdash; Present</h4>
+          <p class="resume-item-copy">tensorflow blah blah, convnet blah blah, mobile phone blah</p>
+        </div>
 
       </section>
-      <!-- end Experience -->
+      <!-- end Education -->
       {% endif %}
-
+	  
+	  
       {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
@@ -101,9 +76,15 @@
         </header>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <h3 class="resume-item-title" itemprop="name">University Of Texas At Dallas</h3>
+          <h4 class="resume-item-details" itemprop="description">Masters Degree, Electrical Engineering &bull; Aug-2015 &mdash; May-2017</h4>
+          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here. Okay</p>
+        </div>
+
+		<div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Sri Jayachamrajendra College Of Engineering, Mysuru. India</h3>
+          <h4 class="resume-item-details" itemprop="description">Bachelors Degree, Electronics and Computer Engineering &bull; Sept-2009 &mdash; June-2013</h4>
+          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here. Okay</p>
         </div>
 
       </section>
@@ -132,6 +113,36 @@
 
       </section>
       <!-- end Projects -->
+      {% endif %}
+
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Delphi Automotive Systems</h3>
+          <h4 class="resume-item-details" itemprop="description">Software Engineer &bull; Aug, 2013 &mdash; July 2015</h4>
+          <p class="resume-item-copy">Programmed and tested Electronic Control Module (Name: DCM 2.5) for Hyundai Motors.	
+		  Worked on CAN communication protocol and feature like Fuel Injection in Daimler Project.    
+		Extensively used Polyspace (Static testing) and RTRT (Dynamic testing) tools for unit testing embedded systems.
+</p>
+          <ul class="resume-item-list">
+            <li>Ate lots of donuts</li>
+            <li>Fell asleep rarely</li>
+            <li>Left promptly at end of day (sometimes earlier)</li>
+          </ul>
+          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
+
+        </div><!-- end of resume-item -->
+
+      </section>
+      <!-- end Experience -->
       {% endif %}
 
       {% if site.resume_section_skills %}
@@ -251,8 +262,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Made by Srinivas. Fork me on <a href="https://github.com/cna274">GitHub</a>.</p>
       </footer>
 
     </div>
