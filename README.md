@@ -1,56 +1,64 @@
-# Kikofri
+# resume-template
 
-Kikofri is a theme for Jekyll that's a fork of the [Kiko theme](https://github.com/gfjaru/Kiko) by [@gfjaru](https://twitter.com/gfjaru) (which I do recommend). 
+*A simple Jekyll + GitHub Pages powered resume template.*
 
-It came about because I like my themes like I like my music: ugly, old and barren. It's an assortment of hacks filtered through web-design choices from the turn of the millennium.
+![img](images/screenshot.png)
 
-You'll see it undead here [http://kikofri.johantkatiska.se/](http://kikofri.johantkatiska.se/)
+## Docs
 
-## To do:
+### Running locally
 
-* Clean up redundant markup
-* Reevaluate the need for four layouts
-* Listen to Good Friendly Violent Fun by Exodus
+To test locally, run the following in your terminal:
 
-## How to:
+1. Clone repo locally
+1. `bundle install`
+2. `bundle exec jekyll serve`
+3. Open your browser to `localhost:4000`
 
-1. Fork this repository
-2. Clone the repository to your computer.<br />`git clone https://github.com/YOURUSERNAME/Kikofri`  
-3. Run it.<br />`jekyll serve`
-4. If that doesn't work you might want to take a look at the Gemfile in the cloned repository and satisfy dependencies where it is needed.
- - I'd recommend [rvm](https://rvm.io/) for this.
-5. Go to http://127.0.0.1:4000 in your browser.
+### Customizing
 
-### General pointers:
+First you'll want to fork the repo to your own account. Then clone it locally and customize, or use the GitHub web editor to customize.
 
-* If you don't use Github remove the line `gh-pages` in the Gemfile in addition to consulting the [Jekyll documentation](https://jekyllrb.com/docs/home/) for [deployment options](https://jekyllrb.com/docs/deployment-methods/).
-* For indented paragraphs type: `µµ`
+#### Options/configuration
 
-## Make it a little less ugly:
+Most of the basic customization will take place in the `/_config.yml` file. Here is a list of customizations available via `/_config.yml`:
 
-1. Change the name and modify nav at `_config.yml`.
-2. Make some appropriate changes — or inappropriate if you're into those kind of things — in `about.md`.
-3. Navigate to the `_posts` folder and remove the example content by writing `rm *` in your terminal (make sure that you're in the right folder)
- - while you're at it create a post of your own like so: `touch YYYY-MM-DD.md`
- - then do this: `echo -e "---\ntitle: 'Friends Don't Lie.'\ndescription: 'No more.'\nauthor: 'Eleven'\n---" > YYYY-MM-DD.md`
-4. Type away! Reject my reality and substitute your own!
+[...write these out...]
+
+#### Editing content
+
+Most of the content configuration will take place in the `/_layouts/resume.html` file. Simply edit the markup there accordingly
+
+### Publishing to GitHub Pages for free
+
+[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account. Just make sure you're using a `gh-pages` branch, and the site will automatically be available at `yourusername.github.io/resume-template` (you can rename the repo to resume for your own use if you want it to be available at `yourusername.github.io/resume`). You can also add a CNAME if you want it to be available at a custom domain...
+
+### Configuring with your own domain name
+
+To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
+
+### Themes
+
+Right now resume-template only has one theme. More are coming :soon: though. :heart:
+
+## Roadmap
+
+- [ ] Add print button/styles
+- [ ] Add PDF button/functionality
+- [ ] Add more theme styles
+- [ ] Add a "fork me on GitHub" thing
+- [ ] Finish docs
+- [ ] Cleanup CSS
+
+## Contributing
+
+If you spot a bug, or want to improve the code, or even make the dummy content better, you can do the following:
+
+1. [Open an issue](https://github.com/jglovier/resume-template/issues/new) describing the bug or feature idea
+2. Fork the project, make changes, and submit a pull request
 
 ## License
 
-The Kikofri theme by [kxxvii](https://github.com/kxxvii) is released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). The Kiko theme by [@gfjaru](https://twitter.com/gfjaru) is released under the [MIT License](https://opensource.org/licenses/MIT). 
+The code and styles are licensed under the MIT license. [See project license.](LICENSE) Obviously you should not use the content of this demo repo in your own resume. :wink:
 
-```
-   Copyright 2016 kxxvii
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-```
+Disclaimer: Use of Homer J. Simpson image and name used under [Fair Use](https://en.wikipedia.org/wiki/Fair_use) for educational purposes. Project license does not apply to use of this material.

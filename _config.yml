@@ -1,55 +1,52 @@
----
-# # # # # # # # # #
-#  K i k o f r i  #
-# # # # # # # # # #
+# Site settings
+title: "Jekyll Resume Template"
+description: "A resume template for Jekyll and GitHub Pages sites."
 
-# Basic
-name: "Srinivas"
-description: "Project and Blogs by me"
-
-# URL
-url: ""
-#baseurl: ""
-permalink: /:year/:month/:day/:title.html
-
-# Markdown
+# Build settings
 markdown: kramdown
-
-# Navigation
-nav:
- - name: "about"
-   href: "/about"
-
- - name: "reference"
-   href: "/ref"
-
- - name: "contact"
-   href: "mailto:ivantheterrible@1530to1584.gov?You%20are%20ooold..."
-
-# Sass
 sass:
- style: :compressed
+  sass_dir: _sass
+  style: compressed
 
-# Excerpt
-excerpt_separator: <!-ex->
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Homer J. Simpson"
+resume_title:                   "Nuclear Safety Inspector"
+resume_contact_email:
+  "homerjsimpson@youremailaddress.com"
+resume_header_contact_info: "742 Evergreen Terrace, Springfield | 555-7334 | homerjsimpson@youremailaddress.com"
 
-#Gems
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "/page:num/"
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
 
-# Scopes
-defaults:
- -
-  scope:
-   path: ""
-   type: "pages"
-  values:
-   layout: "page"
- -
-  scope:
-   path: ""
-   type: "posts"
-  values:
-   layout: "post"
----
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        true
+resume_section_skills:          true
+resume_section_recognition:     true
+resume_section_links:           true
+resume_section_associations:    true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/jglovier/resume-template"
+  resume_twitter_url:           "http://twitter.com/jglovier"
+  resume_dribbble_url:          "https://dribbble.com/jag"
+  # resume_facebook_url:          "insert Facebook URL here"
+  resume_linkedin_url:          "https://www.linkedin.com/in/joelglovier"
+  # resume_instagram_url:         "insert your Instagram URL here"
+  resume_website_url:           "http://joelglovier.com"
+resume_print_social_links:      true
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts
