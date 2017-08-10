@@ -11,10 +11,10 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Srinivas S. Kulkarni"
-resume_title:                   "Graduate Student at University Of Texas At Dallas"
+resume_title:                   "Data Scientist (Deep Learning) at Quantiphi Inc."
 resume_contact_email:
-  "ssk150530@utdallas.edu"
-resume_header_contact_info: "7650 McCallum Blvd, #2102, Dallas Tx - 75252 | 469-664-3655 |  ssk150530@utdallas.edu"
+  "ssk150530@gmail.com"
+resume_header_contact_info: "77 Crescent St Waltham MA | 469-664-3655 | ssk150530@gmail.com"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
